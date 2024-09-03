@@ -9,7 +9,7 @@
 
 body {
     font-size: 100%;
-    background: linear-gradient(68.15deg, #000000 16.62%, #808080 85.61%);
+    background-color: #201b2c; 
 }
 
 .cabecalho {
@@ -32,7 +32,7 @@ body {
     font-family: 'Sarala', sans-serif;
     color: #fff2e7;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .conteudo {
@@ -57,7 +57,7 @@ body {
     font-family: 'Righteous', cursive;
     font-weight: 400;
     font-size: 64px;
-    color: #fff2e7;
+    color: #407BFF;
 }
 
 .conteudo-principal-escrito-subtitulo {
@@ -102,7 +102,7 @@ body {
     font-family: 'Righteous', cursive;
     font-weight: 400;
     font-size: 24px;
-    color: #fff2e7;
+    color: #407BFF;
     margin-bottom: 16px;
 }
 
