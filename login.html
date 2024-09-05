@@ -5,31 +5,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styleLogin.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Login</title>
-</head>
 
-<body>
-    <div class="main-login">
-        <div class="left-login">
-            <h1>Faça Login <br> E entre para o nosso time</h1>
-            <img src="/Imagens/Chat bot-cuate.png" class="left-login-image" alt="Robo">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <style>
+    body {
+        font-family: 'Noto Sans', sans-serif;
+    }
+    body *{
+        box-sizing: border-box;
+    }
+    .card-login {
+        padding: 30px 35px;
+        border-radius: 20px;
+        box-shadow: 0px 10px 40px #00000056;
+    }
+    .textfield > input {
+        background: #514869;
+        color: #f0ffffde;
+        box-shadow: 0px 10px 40px #00000056;
+    }
+    .btn-login {
+        color: #2b134b;
+        box-shadow: 0px 10px 40px -12px #0059ff52;
+    }
+
+    </style>
+
+</head class>
+
+<body class="m-0">
+    <div class="w-screen h-screen bg-slate-950 flex justify-center items-center">
+        <div class="flex justify-center items-center flex-col h-screen w-3/6">
+            <h1 class="text-blue-500 text-5xl">Faça Login <br> E entre para o nosso time</h1>
+            <img src="/Imagens/Chat bot-cuate.png" class="w-8/12" alt="Robo">
         </div>
-        <div class="right-login">
-            <div class="card-login">
-                <h1>LOGIN</h1>
+        <div class="w-1/2 h-screen flex justify-center items-center ">
+            <div class="card-login w-3/5  flex justify-center items-center flex-col bg-[#2f2841]">
+                <h1 class="text-blue-500 font-extrabold m-0">LOGIN</h1>
+                                        <!-- Formulário -->
+                    <form action="index.html" class="flex flex-col justify-center items-center w-full" method="POST" id="login">
+                        <div class="textfield w-full flex flex-col items-start justify-center ">
+                            <label for="usuario" class="mb-3 text-slate-200">Usuário</label>
+                            <input type="text" name="usuario" placeholder="Usuário" class=" placeholder:text-gray-400 w-full border-0 rounded-xl p-4 text-sm outline-0 box-border" required>
+                        </div>
+                        <div class="textfield w-full flex flex-col items-start justify-center my-4 mx-0">
+                            <label for="senha" class="mb-3 text-slate-200">Senha</label>
+                            <input type="password" name="senha" placeholder="Senha" class="placeholder:text-gray-400 w-full border-0 rounded-xl p-4 text-sm outline-0 box-border" required>
+                        </div>
+                        <button class="btn-login w-full p-4 m-6 border-0 rounded-lg outline-0 uppercase font-extrabold tracking-widest bg-blue-500 cursor-pointer hover:bg-slate-600 ease-* duration-100 ">Login</button>
+                    </form>
 
-                <form action="index.html">
-                    <div class="textfield">
-                        <label for="usuario">Usuário</label>
-                        <input type="text" name="usuario" placeholder="Usuário" required>
-                    </div>
-                    <div class="textfield">
-                        <label for="senha">Senha</label>
-                        <input type="password" name="senha" placeholder="Senha" required>
-                    </div>
-                    <button class="btn-login">Login</button>
-                </form>
-                
             </div>
         </div>
     </div>
