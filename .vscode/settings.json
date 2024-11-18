@@ -10,9 +10,9 @@
             "port": 3306,
             "driver": "MySQL",
             "name": "FirstMySQLConnection",
-            "database": "rica",
-            "username": "admin",
-            "password": "guilherme_veras@1"
+            "database": "usuarios",
+            "username": "root",
+            "password": "admin"
         }
     ]
 }
